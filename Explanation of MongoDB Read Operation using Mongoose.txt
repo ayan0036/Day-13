@@ -1,0 +1,8 @@
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It allows developers to work with MongoDB using JavaScript objects. 
+
+To read data from MongoDB, Mongoose provides various methods: 
+
+ .find() → Retrieves multiple documents that match a query. If no query is passed, it returns all documents. 
+ .findById() → Retrieves a single document using the _id field. It returns null if no document matches. 
+
+These methods return Promises, which we handle using async/await and wrap in try-catch blocks to manage errors gracefully.
